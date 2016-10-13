@@ -5,11 +5,10 @@ module.exports = {
   devtool: 'source-map',
   entry: [
     'babel-polyfill',
-    './app/main'
+    './src/routes'
   ],
   output: {
     path: path.join(__dirname, 'public'),
-    filename: 'app.built.js',
     publicPath: '/public/'
   },
   plugins: [

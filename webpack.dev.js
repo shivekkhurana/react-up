@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var DashboardPlugin = require('webpack-dashboard/plugin');
 
 module.exports = {
   // or devtool: 'eval' to debug issues with compiled output:
@@ -7,7 +8,10 @@ module.exports = {
   entry: [
     // your code:
     'babel-polyfill',
-    './app/main.js'
+    './src/routes.js'
+  ],
+  plugins: [
+    new DashboardPlugin()
   ],
   output: {
     path: path.join(__dirname, 'public'),
