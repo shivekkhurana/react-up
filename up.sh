@@ -12,10 +12,17 @@ Installing react-router
 '
 npm install react-router --save
 
+# echo '
+# Installing tachyons
+# '
+# npm install tachyons --save
+
 echo '
-Installing tachyons
+Installing ant.design
 '
-npm install tachyons --save
+npm install antd --save
+npm install babel-plugin-import --save-dev
+
 
 echo '
 Installing webpack
@@ -31,6 +38,7 @@ echo '
 Installing babel
 '
 npm install babel-cli babel-preset-es2015 babel-preset-react babel-eslint babel-loader babel-plugin-add-module-exports babel-preset-stage-0 babel-preset-react-hmre --save-dev
+npm install style-loader css-loader --save-dev
 
 echo '
 Setting up webpack

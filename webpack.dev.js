@@ -25,12 +25,16 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         query: {
           presets: ['es2015', 'stage-0', 'react-hmre', 'react'],
-          plugins: ['add-module-exports']
+          plugins: ['add-module-exports', ['import', { libraryName: 'antd', style: 'css' }]]
         }
       },
       {
         test: /\.styl$/,
         loader: 'style-loader!css-loader!stylus-loader'
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
       }
     ]
   },
